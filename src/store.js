@@ -18,7 +18,7 @@ const persistConfig = {
   key: "root",
   storage,
   whitelist: ["form", "contacts", "flag", "pagination"]
-  // whitelist: ["fosrm"]
+  // whitelist: ["form"]
 };
 
 const persistedRootReducer = persistReducer(persistConfig, rootReducer);

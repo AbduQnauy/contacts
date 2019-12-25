@@ -27,9 +27,7 @@ const ContactsTable = ({ contacts, flag, checkAll, onUpdate, onDelete }) => {
               />
             </th>
             <th>#</th>
-            <th>
-              Name
-            </th>
+            <th>Name</th>
             <th>Category</th>
             <th>Phone</th>
             <th>Birth Date(Y-M-D)</th>

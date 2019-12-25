@@ -50,8 +50,8 @@ class ContactsPage extends React.Component {
       indexOfFirstContact,
       indexOfLastContact
     );
-    const ascendingCurrentContacts = currentContacts;
-    const descendingCurrentContacs = currentContacts;
+    // const ascendingCurrentContacts = currentContacts;
+    // const descendingCurrentContacs = currentContacts;
     //
     return (
       <div>
