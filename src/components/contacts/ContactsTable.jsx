@@ -1,5 +1,6 @@
 import React from "react";
 import { Table, Input } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ContactRecord from "./ContactRecord";
 
 const ContactsTable = ({ contacts, flag, checkAll, onUpdate, onDelete }) => {
@@ -27,7 +28,26 @@ const ContactsTable = ({ contacts, flag, checkAll, onUpdate, onDelete }) => {
               />
             </th>
             <th>#</th>
-            <th>Name</th>
+            <th style={{ display: "flex" }}>
+              <span style={{ alignSelf: "center" }}>Name</span>
+              <span
+                className="ml-2"
+                style={{ display: "inline-flex", flexDirection: "column" }}
+              >
+                <FontAwesomeIcon
+                  icon="angle-up"
+                  onClick={() => console.log("up")}
+                  // cursor="not-allowed"
+                  // color="gray"
+                ></FontAwesomeIcon>
+                <FontAwesomeIcon
+                  icon="angle-down"
+                  onClick={() => console.log("down")}
+                  // cursor="not-allowed"
+                  // color="gray"
+                ></FontAwesomeIcon>
+              </span>
+            </th>
             <th>Category</th>
             <th>Phone</th>
             <th>Birth Date(Y-M-D)</th>
