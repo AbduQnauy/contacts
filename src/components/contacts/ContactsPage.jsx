@@ -8,16 +8,7 @@ import {
 } from "../../actions";
 import Pagination from "../paginationTemplate/Pagination";
 
-import {
-  Button,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledButtonDropdown,
-  Container,
-  Row,
-  Col
-} from "reactstrap";
+import { Button, Container, Row, Col } from "reactstrap";
 
 //
 import ContactsTable from "./ContactsTable";
@@ -57,7 +48,7 @@ class ContactsPage extends React.Component {
       <div>
         <Container style={{ padding: "5%" }}>
           <Row>
-            <Col>
+            <Col xs={{ order: 2, offset: 1 }} md={{ order: 1, offset: 0 }}>
               <Button
                 color="danger"
                 disabled={!flag}
@@ -67,7 +58,7 @@ class ContactsPage extends React.Component {
                 Delete Contacts
               </Button>
             </Col>
-            <Col>
+            <Col xs={{ order: 3 }} md={{ order: 2, offset: 2 }}>
               <Button
                 color="info"
                 onClick={() => {
@@ -79,7 +70,11 @@ class ContactsPage extends React.Component {
                 New Contact
               </Button>
             </Col>
-            <Col style={{ margin: "1rem", marginLeft: "0" }}>
+            <Col
+              xs={{ order: 1, offset: 1, size: 11 }}
+              md={{ order: 3, size: "auto" }}
+              style={{ margin: "1rem", marginLeft: "0" }}
+            >
               {/* Pagination */}
               <Pagination
                 contactsPerPage={contactsPerPage}
@@ -110,7 +105,7 @@ class ContactsPage extends React.Component {
             fontSize: "1.5rem",
             color: "#000",
             position: "fixed",
-            top: "80%",
+            top: "90%",
             left: "10%"
           }}
         >

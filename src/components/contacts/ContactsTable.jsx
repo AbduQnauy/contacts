@@ -28,24 +28,26 @@ const ContactsTable = ({ contacts, flag, checkAll, onUpdate, onDelete }) => {
               />
             </th>
             <th>#</th>
-            <th style={{ display: "flex" }}>
-              <span style={{ alignSelf: "center" }}>Name</span>
-              <span
-                className="ml-2"
-                style={{ display: "inline-flex", flexDirection: "column" }}
-              >
-                <FontAwesomeIcon
-                  icon="angle-up"
-                  onClick={() => console.log("up")}
-                  // cursor="not-allowed"
-                  // color="gray"
-                ></FontAwesomeIcon>
-                <FontAwesomeIcon
-                  icon="angle-down"
-                  onClick={() => console.log("down")}
-                  // cursor="not-allowed"
-                  // color="gray"
-                ></FontAwesomeIcon>
+            <th>
+              <span style={{ display: "flex" }}>
+                <span style={{ alignSelf: "center" }}>Name</span>
+                <span
+                  className="ml-2"
+                  style={{ display: "inline-flex", flexDirection: "column" }}
+                >
+                  <FontAwesomeIcon
+                    icon="angle-up"
+                    onClick={() => console.log("up")}
+                    // cursor="not-allowed"
+                    // color="gray"
+                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                    icon="angle-down"
+                    onClick={() => console.log("down")}
+                    // cursor="not-allowed"
+                    // color="gray"
+                  ></FontAwesomeIcon>
+                </span>
               </span>
             </th>
             <th>Category</th>
